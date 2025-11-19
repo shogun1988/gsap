@@ -15,6 +15,14 @@ const navLinks = [
 	id: "contact",
 	title: "Contact",
  },
+ {
+	id: "social",
+	title: "Social media"
+ },
+ {
+	id: "test",
+	title: "Test"
+ }
 ];
 
 const cocktailLists = [
