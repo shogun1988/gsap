@@ -1,16 +1,66 @@
-# React + Vite
+# Mojito Bar (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interactive cocktail themed site built with React 19, Vite, Tailwind CSS v4, and GSAP animations (ScrollTrigger + SplitText + video scroll scrub).
 
-Currently, two official plugins are available:
+## Features
+- Scroll‑scrubbed hero video using GSAP ScrollTrigger
+- SplitText intro animations
+- Responsive layout (mobile & desktop)
+- Tailwind CSS v4 utility classes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Prerequisites
+- Node.js 18+ (recommend latest LTS)
+- Git (for cloning)
 
-## React Compiler
+Check versions:
+```pwsh
+node -v
+npm -v
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Installation
+```pwsh
+# Clone
+git clone https://github.com/shogun1988/gsap.git mojito-bar
+cd mojito-bar
 
-## Expanding the ESLint configuration
+# Install dependencies
+npm install
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Development
+```pwsh
+npm run dev
+```
+Open the URL printed by Vite (usually http://localhost:5173).
+
+## Lint
+```pwsh
+npm run lint
+```
+
+## Build
+```pwsh
+npm run build
+```
+Output is generated in `dist/`.
+
+## Preview Production Build
+```pwsh
+npm run preview
+```
+
+## GSAP Notes
+- ScrollTrigger & SplitText registered in `src/App.jsx`.
+- Hero video scrub implemented in `src/components/Hero.jsx` (waits for `loadedmetadata` to map scroll to `currentTime`).
+
+## Tailwind v4 Notes
+This project uses the new Tailwind v4 syntax (`@import "tailwindcss";`). If editor tooling flags custom `@utility` or `@apply` blocks, ensure you are on the latest Tailwind & PostCSS plugin versions.
+
+## Future Ideas
+- Pinning hero section during video scrub
+- Accessibility pass (focus states, reduced motion)
+- Dark overlay fade synced with video progress
+
+## License
+Private / internal project. Do not redistribute without permission.
