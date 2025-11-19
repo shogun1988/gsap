@@ -11,7 +11,7 @@ const Art = () => {
 	
 	const maskTimeline = gsap.timeline({
 	 scrollTrigger: {
-		trigger: 'art',
+		trigger: '#art',
 		start,
 		end: 'bottom center',
 		scrub: 1.5,
@@ -26,7 +26,7 @@ const Art = () => {
  })
  
  return (
-	<section id="art">
+	<div id="art">
 	 <div className="container mx-auto h-full pt-20">
 		<h2 className="will-fade">The ART</h2>
 		
@@ -66,7 +66,7 @@ const Art = () => {
 		 </div>
 		</div>
 	 </div>
-	</section>
+	</div>
  )
 }
 export default Art
