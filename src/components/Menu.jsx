@@ -2,7 +2,10 @@ import React from "react";
 
 const Menu = () => {
     return (
-        <div>Menu</div>
+        <section id="menu" aria-labelledby="menu-heading">
+            <img src="/images/slider-left-leaf.png" alt="left-leaf" id="m-left-leaf"/>
+
+        </section>
     )
 }
 
