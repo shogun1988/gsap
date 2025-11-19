@@ -1,4 +1,4 @@
-# Mojito Bar (React + Vite)
+# Mojito Bar (React + Vite + Gsap)
 
 Interactive cocktail themed site built with React 19, Vite, Tailwind CSS v4, and GSAP animations (ScrollTrigger + SplitText + video scroll scrub).
 
