@@ -95,6 +95,38 @@ const Contact = () => {
 		 </div>
 		</div>
 	 </div>
+	<button
+		id="to-top"
+		onClick={() =>
+			gsap.to(document.scrollingElement || document.documentElement, {
+				scrollTop: 0,
+				duration: 0.1,
+				ease: 'power1.inOut',
+			})
+		}
+		aria-label="Scroll to top"
+		title="Scroll to top"
+		style={{
+			position: 'fixed',
+			right: '1rem',
+			bottom: '1.5rem',
+			width: '48px',
+			height: '48px',
+			borderRadius: '50%',
+			border: 'none',
+			background: '#111',
+			color: '#fff',
+			display: 'grid',
+			placeItems: 'center',
+			cursor: 'pointer',
+			boxShadow: '0 4px 12px rgba(0,0,0,0.2)',
+			zIndex: 1000,
+		}}
+	>
+		<span aria-hidden="true" style={{ fontSize: '1.25rem', lineHeight: 1 }}>
+			↑
+		</span>
+	</button>
 	</footer>
  )
 }
