@@ -39,6 +39,26 @@ const Contact = () => {
 		
 		<div>
 		 <h3>Visit Our Bar</h3>
+		<div className="map-wrapper" style={{ width: '100%', maxWidth: '100%', height: '500px', margin: '1rem 0' }} aria-label="Map showing our bar location">
+			<iframe
+				title="Our Bar Location"
+				src="https://www.google.com/maps?q=456,+Raq+Blvd.+%23404,+Los+Angeles,+CA+90210&output=embed"
+				width="100%"
+				height="100%"
+				style={{ border: 0 }}
+				allowFullScreen=""
+				loading="lazy"
+				referrerPolicy="no-referrer-when-downgrade"
+			/>
+			<p style={{ marginTop: '0.5rem' }}>
+				<a
+					href="https://www.google.com/maps/search/?api=1&query=456+Raq+Blvd+%23404+Los+Angeles+CA+90210"
+					target="_blank"
+					rel="noopener noreferrer"
+				>					
+				</a>
+			</p>
+		</div>
 		 <p>456, Raq Blvd. #404, Los Angeles, CA 90210</p>
 		</div>
 		
